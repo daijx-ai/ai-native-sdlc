@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI-Native SDLC"
+  short_description: "Route software work through its next evidence-backed gate"
+  default_prompt: "Use $ai-native-sdlc for stage-ambiguous work, project resumption, artifact conflicts, or Test/Deploy/Maintain transitions. Do not use it for accepted-Spec Build or bounded fixes; route those directly to $tospec and the canonical workflow."
+
+policy:
+  allow_implicit_invocation: true
