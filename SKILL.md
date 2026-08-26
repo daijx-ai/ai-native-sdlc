@@ -2,7 +2,7 @@
 name: ai-native-sdlc
 description: Route stage-ambiguous or cross-stage software work through the next evidence-backed gate. Use for a new product or feature with no accepted Spec, an unresolved governing artifact conflict, project resumption, Test/Deploy/Maintain transitions, an incident whose cause, impact, or re-entry stage is unresolved, or an adoption audit. Do not invoke merely because accepted-Spec implementation or a bounded fix spans Build and Test; accepted-Spec Build, an already-reproduced scoped bug with accepted expected behavior, and a single already-scoped edit or fix go directly to tospec and the canonical workflow. Do not use for read-only explanations.
 metadata:
-  version: "0.1.1"
+  version: "0.1.2"
 ---
 
 # AI-Native SDLC
@@ -26,7 +26,7 @@ Primary consumers are the orchestrating agent at task entry and the user during 
 3. Identify the latest accepted input and the first unpassed gate. Do not repeat a stage because a preferred filename is absent.
 4. Read only the matching stage reference below. If new evidence contradicts an accepted intent, Spec, permission, security boundary, or other Contract, stop the current stage, read [Artifact and transition contract](references/artifact-contract.md), return to the governing earlier stage, and invalidate affected downstream evidence before continuing.
 5. Multi-stage work advances one accepted gate at a time.
-6. If this Skill discovers that the task is excluded by its description, hand off to `$tospec` and the canonical workflow without a receipt. Otherwise emit a compact lifecycle receipt only when this Skill actually selected or advanced a lifecycle gate. Read-only explanations do not use this Skill or a receipt; adoption audits use their own delivery format. The receipt replaces, never accompanies, free-form lifecycle status prose:
+6. If this Skill discovers that the task is excluded by its description, hand off to `$tospec` and the canonical workflow without a receipt. Do not emit a lifecycle receipt for a read-only explanation, a synthetic trigger or evaluation, a route-only classification with no real project action, or an adoption audit. Adoption audits use their own delivery format. For a real project task, emit exactly one compact lifecycle receipt only after the current instruction or project/runtime evidence confirms the current stage and first unpassed gate, or after a gate is actually advanced. The receipt replaces, never accompanies, free-form lifecycle status prose:
 
 ```text
 entry_stage: <stage>
