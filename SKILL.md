@@ -1,6 +1,8 @@
 ---
 name: ai-native-sdlc
 description: Route stage-ambiguous or cross-stage software work through the next evidence-backed gate. Use for a new product or feature with no accepted Spec, an unresolved governing artifact conflict, project resumption, Test/Deploy/Maintain transitions, an incident whose cause, impact, or re-entry stage is unresolved, or an adoption audit. Do not invoke merely because accepted-Spec implementation or a bounded fix spans Build and Test; accepted-Spec Build, an already-reproduced scoped bug with accepted expected behavior, and a single already-scoped edit or fix go directly to tospec and the canonical workflow. Do not use for read-only explanations.
+metadata:
+  version: "0.1.1"
 ---
 
 # AI-Native SDLC

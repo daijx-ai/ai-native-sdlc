@@ -2,7 +2,7 @@
 
 An evidence-gated lifecycle router Skill for AI-assisted software work.
 
-`v0.1.0` is the initial DJX personal release. It has not yet completed a real-project pilot.
+`v0.1.1` is the current DJX personal release. It adds explicit Skill frontmatter version metadata while preserving the immutable `v0.1.0` initial tag. It has not yet completed a real-project pilot.
 
 ## What it does
 
