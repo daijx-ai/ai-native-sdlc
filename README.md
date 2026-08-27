@@ -2,12 +2,13 @@
 
 An evidence-gated lifecycle router Skill for AI-assisted software work.
 
-`v0.1.2` is the current DJX personal release. It makes lifecycle receipts exclusive to evidence-backed work on a real project, so synthetic routing evaluations and route-only classifications do not create false state. The immutable `v0.1.0` and `v0.1.1` tags remain preserved. It has not yet completed a real-project pilot.
+`v0.1.3` is the current DJX personal main version. It keeps lifecycle receipts evidence-backed, treats one-gate-at-a-time as dependency order rather than an automatic turn end, and preserves explicit approval gates for Deploy and other external actions. The immutable `v0.1.0`–`v0.1.2` tags remain preserved. It has not yet completed a real-project pilot.
 
 ## What it does
 
 - identifies the current lifecycle stage and the first unpassed gate;
 - reuses accepted project evidence instead of replaying completed stages;
+- continues to the next already-authorized gate without treating every accepted gate as a task endpoint;
 - routes Plan, Design, Build, Test, Deploy, and Maintain work to on-demand references;
 - keeps accepted-Spec Build and bounded fixes on the direct `tospec` + canonical-workflow path;
 - stops releases, deployments, credentials, permissions, and external writes at explicit authorization gates.
